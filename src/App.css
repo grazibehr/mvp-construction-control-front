@@ -1,0 +1,26 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 280px;
+  background: var(--bg-tertiary);
+  min-height: 100vh;
+  transition: margin-left 0.3s ease, background 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 70px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
